@@ -1,6 +1,6 @@
 [package]
 name = "quantize_palette"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["ffmulks <63452434+ffmulks@users.noreply.github.com>"]
 description = "Snap images onto a fixed color palette in Oklab space, with optional dithering"
