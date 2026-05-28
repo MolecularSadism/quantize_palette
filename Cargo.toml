@@ -1,0 +1,31 @@
+[package]
+name = "quantize_palette"
+version = "0.1.0"
+edition = "2024"
+authors = ["ffmulks <63452434+ffmulks@users.noreply.github.com>"]
+description = "Snap images onto a fixed color palette in Oklab space, with optional dithering"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/MolecularSadism/quantize_palette"
+readme = "README.md"
+keywords = ["palette", "quantize", "dithering", "pixel-art", "oklab"]
+categories = ["command-line-utilities", "graphics"]
+
+[dependencies]
+image = { version = "0.25", default-features = false, features = [
+    "png",
+    "jpeg",
+    "webp",
+    "bmp",
+    "tga",
+    "gif",
+    "qoi",
+] }
+png = "0.17"
+clap = { version = "4", features = ["derive"] }
+walkdir = "2"
+rayon = "1"
+anyhow = "1"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
