@@ -20,7 +20,7 @@ image = { version = "0.25", default-features = false, features = [
     "gif",
     "qoi",
 ] }
-png = "0.17"
+png = "0.18"
 clap = { version = "4", features = ["derive"] }
 walkdir = "2"
 rayon = "1"
